@@ -26,3 +26,11 @@ def random_product() -> Dict[str, str]:
         "name": "Test Product",
         "price": 80,
     }
+
+@pytest.fixture(scope="module")
+def random_lecture() -> Dict[str, str]:
+    return {
+        "id": 1,
+        "title": "Hello World",
+        "description": "Wow",
+    }
